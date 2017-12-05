@@ -1,0 +1,31 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+typedef struct
+{
+ int Numérodesérie;
+ char typeduprocesseur;
+ int vitesseduprocesseur;
+ int tailledelamémoire;
+} ordinateurs[30];
+int main()
+{int i, max = 0, k = 0;
+   int n ;
+   printf (" donnez le valeur n");
+   scanf(" %d",&n);
+   for (i=0; i<n ; i++)
+   printf ("donnez le Numéro de série\n", i);
+   scanf ( "%d",&ordinateurs[i] .Numérodesérie);
+   printf ("donnez le type du processeur");
+   scanf ( "%c",&ordinateurs[i].typeduprocesseur);
+    printf ("donnez letaille de la mémoire");
+   scanf ( "%d",&ordinateurs[i] .tailledelamémoire );
+   printf ("donnez la vitesse du processeur");
+   scanf ( "%d",&ordinateurs[i] . vitesseduprocesseur);
+   if (ordinateurs [i] .vitesseduprocesseu> max) {
+		max = ordinateurs [i] .vitesseduprocesseur;
+		k = i;}
+printf (" Numérodesérie =% d \ t typeduprocesseur =% d \ t tailledelamémoire=% d \ t vitesseduprocesseur =% d", ordinateurs [k] .Numérodesérie
+, ordinateurs [k] .typeduprocesseur, ordinateurs [k] .tailledelamémoire,ordinateurs [k]. vitesseduprocesseur) ;
+}
+}
