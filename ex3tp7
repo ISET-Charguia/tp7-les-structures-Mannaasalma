@@ -1,0 +1,55 @@
+#include <stdio.h>
+#include <stdlib.h>
+struct chanson {
+	titre de char [30];
+	int dure;
+
+} chanson [10];
+struct disque {
+	int année;
+	 char titre de disque [30];
+	struct  chanson liste [10];
+	int nbchanson;
+
+}disque [12];
+
+int main () {
+	int i, j, n, k = 0;
+
+	char ch [10];
+	printf ("donnez le valeur  n");
+	scanf ("% d", & n);
+	for (i = 0; i <n; i ++) {
+		printf ("donnez l'annee");
+		scanf ("% d", & disque [i] .année);
+		printf ("donnez titre de disque");
+			scanf ("% s", disque [i] .titre de disque);
+			printf ("donnez le nombre des chansons");
+			do{
+				scanf ("% d", & disque [i] .nbchansons);}
+			while (disque [i] .nbchansons> 5);
+			for (j = 0; j <disque [i] .nbchansons; j ++) {
+				printf ("donnez le titre chanson");
+				scanf ("% s", disque [i] .liste [j] .titre de disque);
+				printf ("donnez sa duree");
+				scanf ("% d", & disque [i] .liste [j] .dure);
+			}
+	}
+	printf ("donnez une chanson");
+	scanf ("% s", ch);
+	for(i = 0; i <n; i ++) {
+
+				for (j = 0; j <disque [i] .nbchansons; j ++) {
+					if (strcmp (ch, disque [i] .liste [j] .titre du disque) == 0) {
+						printf ("son titre du disque est =% s \ n", disque [i] .liste [j] .titre du disque);
+					printf ("son procédé est =% d \ n", disque [i] .liste [j] .dure);
+					k = 1;
+					}
+				    }	
+				    }
+	if (k == 0) {
+		printf ("cette chanson n'existe pas");
+}
+}
+    return 0;
+}
