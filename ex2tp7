@@ -1,0 +1,33 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include<string.h>
+typedef struct
+{
+    char nom[30];
+    int datedenaissance[30];
+   char sexe[30];
+   char nationalité[30];
+}joueurs[30];
+int main(void)
+{
+   int i,n;
+   printf ("donnez le valeur n") ;
+   scanf ("%d",&n);
+   for (i=0; i<n; i++)
+   {
+    printf (" nom");
+    scanf ("%s",&joueurs[i].nom);
+     printf (" date de naissance");
+    scanf ("%d",&joueurs[i].date de naissance);
+     printf (" sexe");
+    scanf ("%s",&joueurs[i].sexe);
+     printf (" nationalité");
+    scanf ("%s",&joueurs[i].nationalité);
+   }
+   for (i=0; i<n ; i++)
+   {
+      if( strcmp( "Tunisienne",joueurs[i].nationalité== 0))
+      {printf("nom= %s\t date de naissance=%d\t sexe=%s \t nationalité=%s",joueurs[i].nom,joueurs[i].naissance, joueurs[i].sexe ,joueurs[i].nationalité);}
+   }
+    return 0;
+}
